@@ -1,0 +1,23 @@
+#Diccionario de flanes
+flanes = [
+        {'id': 1,
+        'nombre': 'Flan de Café',
+        'descripcion': 'Postre a base de leche y café',
+        'imagen_url': 'https://cdn0.recetasgratis.net/es/posts/4/4/9/flan_de_cafe_con_leche_condensada_36944_orig.jpg',
+        'precio': 3000},
+        {'id': 2,
+        'nombre': 'Flan de Chocolate',
+        'descripcion': 'Postre a base de leche, huevo y chocolate',
+        'imagen_url': 'https://imag.bonviveur.com/flan-de-chocolate.jpg',
+        'precio': 3000},
+        {'id': 3,
+        'nombre': 'Flan Dulce de Leche',
+        'descripcion': 'Postre a base de dulce de leche ',
+        'imagen_url': 'https://lacocinadefrabisa.lavozdegalicia.es/wp-content/uploads/2014/06/flan-de-dulce-de-leche-ok-1.jpg',
+        'precio': 3000},
+        {'id': 4,
+        'nombre': 'Flan de Platano',
+        'descripcion': 'Postre a base de plátano',
+        'imagen_url': 'https://i.blogs.es/f122fb/flan-de-platano-mda-sup-izda-/840_560.jpg',
+        'precio': 3000},
+]

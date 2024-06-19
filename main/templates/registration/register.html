@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Modulo de registro</h1>
+    <div class="row">
+        <div class="col-4 offset-4">
+            <form action="{% url 'register' %}" method="post">
+                {% csrf_token %}
+                {{ form }}
+                <button type="submit" class="btn btn-success">Registrarse</button>
+            </form>
+        </div>
+    </div>
+    <p>Si ya tienes cuenta <a href="/accounts/register">accede</a></p>
+{% endblock %}

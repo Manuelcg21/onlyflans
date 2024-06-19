@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container my-3">
+        {% for msje in errores %}
+            <div class="alert alert-danger" role="alert">{{ msje }}</div>
+        {% endfor %}
+        </h1>
+        <p>Escríbanos ante cualquier consulta.</p>
+        <form action="/contact/" method="post">
+            {% csrf_token %}
+            <!--
+            <label for="customer_name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="customer_name">
+            <label for="customer_email" class="form-label">Correo</label>
+            <input type="text" class="form-control" name="customer_email">
+            <div class="mb-3 pt-2">
+                <label for="message">Mensaje:</label>
+                <textarea class="form-control" rows="5" name="message" name="text"></textarea>
+            </div>
+            -->
+            {{form}}
+            <button id="btnEnviar" type="submit" class="btn btn-success">Enviar</button>
+        </form>
+    </div>
+{% endblock %}

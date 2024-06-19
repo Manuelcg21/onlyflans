@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container my-2">
+    <h3 class="text-center text-primary">
+        Lista de Flanes</h3>
+    <div class="row">
+        {% for flan in flanes_publicos %}
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="{{flan.imagen_url}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{flan.nombre}}</h5>
+                    <p class="card-text">{{flan.descripcion}}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Este flan se ofrece solo a los invitados, si quieres ver mas variedades Registrate o Inicia Sesión</li>
+                    <li class="list-group-item">{{flan.precio}}</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Pedir</a>
+                    <a href="#" class="card-link">Comprar</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock%}
